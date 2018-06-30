@@ -1,5 +1,5 @@
 ---
-layout:post
+layout: post
 title: Supporting asyncio event loop
 ---
 This Blogpost deals with supporting asyncio in scrapy.
