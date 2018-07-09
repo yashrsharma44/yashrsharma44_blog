@@ -5,7 +5,7 @@ sidebar_link: true
 ---
 
 <p class="message">
-  Hey there! My name is Yash Sharma. I am a first year undergraduate student pursuing a dual degree in Mathematics and Computing(batch of 2022) at IIT Kharagpur. I am a native of Kolkata, West Bengal and currently residing there itself.
+  Hey there! My name is Yash Sharma. I am a sophomore student pursuing a dual degree in Mathematics and Computing(batch of 2022) at IIT Kharagpur. I am a native of Kolkata, West Bengal and currently residing there itself.
 </p>
 
 >Info
