@@ -44,7 +44,7 @@ class QuotesSpider(scrapy.Spider):
             print("___RESPONSE_____________________________________________________________{!r}".format(res))
         print("---------------------------END OF PARSE------------------------------------------------")
     
-	async def parse2(self, response):
+    async def parse2(self, response):
         page = response.url.split("/")[-2]
         print("------------------------IN PARSE 2----------------------------")
         filename = 'File-%s.html' % page
@@ -53,6 +53,7 @@ class QuotesSpider(scrapy.Spider):
         self.log('Saved file %s' % filename)
         yield
         print("----END OF PARSE2 ------------")
+        
 ```
 The spider would work, but it needs to be shut down manually, as I have switched off the closing of spider when it remains idle.
 
