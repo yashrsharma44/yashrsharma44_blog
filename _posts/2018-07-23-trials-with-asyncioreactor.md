@@ -36,7 +36,7 @@ class QuotesSpider(scrapy.Spider):
         
         links = [(response.xpath('//@href').extract()[-1])]
         links.append(response.xpath('//@href').extract()[-2])
-       for h1 in response.xpath('//h1').extract():
+        for h1 in response.xpath('//h1').extract():
             yield {"title": h1}
         for link in links:
             res = yield scrapy.Request(url=link)#can use scrapy.Request(.., callback=self.parse2), so supports both the syntax
@@ -53,7 +53,7 @@ class QuotesSpider(scrapy.Spider):
         self.log('Saved file %s' % filename)
         yield
         print("----END OF PARSE2 ------------")
-        
+
 ```
 The spider would work, but it needs to be shut down manually, as I have switched off the closing of spider when it remains idle.
 
